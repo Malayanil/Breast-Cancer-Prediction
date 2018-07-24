@@ -1,4 +1,15 @@
 a) At first, we import the libraries needed for our Script.
-	> Numpy is needed for Array usage in the program and also conversion of DataFrames.
-	> MatplotLib is needed for plotting graphs between various data to find out their dependencies..
-	> Pandas
+	> NumPy is needed for Array usage in the program and also conversion of DataFrames.
+	> MatPlotLib is needed for plotting Graphs between various data to find out their dependencies..
+	> Pandas is needed for it's utility of using DataFrames for proper visualization and storage of datasets from CSV Files.
+	> SKLearn is needed for it's Machine Learning algorithms for data analysis.
+
+b) Now, we load the dataset into our DataFrame and then split and convert them into two different Arrays required for Training and Testing the dataset.
+
+c) Since this is a Machine Learning problem to classify and predict data into two categories, we use the K-Nearest Neighbour Model for classification. 
+	> We find out the optimal value of "K" by plotting an accuracy graph. We then use that value of "K" for final prediction of the data. 
+
+d) Accuracy is also tested upon the Train Set and the Test Set.
+
+e) We then implement K-Fold Cross-Validation to stike off any over-fitting or under-fitting of data in our model and make it a suitable and generalized one. 
+	> We also display the Mean Cross-Validation score at the end.
