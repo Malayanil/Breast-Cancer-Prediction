@@ -1,0 +1,4 @@
+a) At first, we import the libraries needed for our Script.
+	> Numpy is needed for Array usage in the program and also conversion of DataFrames.
+	> MatplotLib is needed for plotting graphs between various data to find out their dependencies..
+	> Pandas
