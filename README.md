@@ -33,7 +33,7 @@ Index :
 	1.4 What is the origin of the dataset ?
 	
 	This breast cancer database was obtained from the University of Wisconsin Hospitals, Madison from Dr. William H. Wolberg. He assessed biopsies of breast tumours for 699 patients up to 15 July 1992; each of nine attributes has been scored on a scale of 1 to 10, and the outcome is also known. There are 699 rows and 11 columns.\
-   16 values are missing from the Bare Nuclei column. In order to avoid any hassle, these 16 records were deleted; else introduction of unruly data may affect the predictibility of the model.\
+   16 values are missing from the Bare Nuclei column. In order to avoid any hassle, these 16 records were deleted; else introduction of unruly data may affect the predictibility of the model. The 'Class' feature was converted to numericals for ease of computation. Class Benign is assumed as 0 and Malignant as 1.\
 P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine learning databases. [Machine-readable data repository]. Irvine, CA: University of California, Department of Information and Computer Science.
 
 
