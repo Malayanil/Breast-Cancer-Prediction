@@ -1,6 +1,6 @@
 # Breast Cancer Prediction
 
-Welcome ! This is a generalised Read Me File for the Breas Cancer Prediction project achived by implementation of Machine Learning in Python. 
+Welcome ! This is a generalised Read Me File for the Breast Cancer Prediction project achieved by implementation of Machine Learning in Python. 
 
 
 Index :
