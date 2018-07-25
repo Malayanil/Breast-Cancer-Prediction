@@ -71,8 +71,9 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		X = preprocessing.StandardScaler().fit(X).transform(X.astype(float))
 		Y = df['Class'].values
 		X_train, X_test, Y_train, Y_test = train_test_split( X, Y, test_size=0.2, random_state=42)
+		# We have chosen the features as concluded from the individual dependencies of features compared to the 'Class' feature.
+		# The graphs have been shown in Section 3 of this file.
 		
-
 	c) Since this is a Machine Learning problem to classify and predict data into two categories, we use the K-Nearest Neighbour Model for classification. 
 		> We find out the optimal value of "K" by plotting an accuracy graph. We then use that value of "K" for final prediction of the data. 
 		
@@ -97,7 +98,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		plt.title('Convergence of Train and Test Graph')
 		plt.legend()
 		plt.show()	
-		
+		# The graph has been shown in Section 3 of this file.
 		
 		
 	d) Accuracy is also tested upon the Train Set and the Test Set.
