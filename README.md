@@ -42,7 +42,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 
 2. Code Explained: (code_explained.txt)
 
-	a) At first, we import the libraries needed for our Script.
+	2.1 At first, we import the libraries needed for our Script.
 		> NumPy is needed for Array usage in the program and also conversion of DataFrames.
 		> MatPlotLib is needed for plotting Graphs between various data to find out their dependencies..
 		> Pandas is needed for it's utility of using DataFrames for proper visualization and storage of datasets from CSV Files.
@@ -62,7 +62,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		from sklearn.cross_validation import cross_val_score, cross_val_predict
 
 
-	b) Now, we load the dataset into our DataFrame and then split and convert them into two different Arrays required for Training and Testing the dataset.
+	2.2 Now, we load the dataset into our DataFrame and then split and convert them into two different Arrays required for Training and Testing the dataset.
 	
 		
 		df = pd.read_csv('biopsy.csv')
@@ -74,7 +74,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		# We have chosen the features as concluded from the individual dependencies of features compared to the 'Class' feature.
 		# The graphs have been shown in Section 3 of this file.
 		
-	c) Since this is a Machine Learning problem to classify and predict data into two categories, we use the K-Nearest Neighbour Model for classification. 
+	2.3 Since this is a Machine Learning problem to classify and predict data into two categories, we use the K-Nearest Neighbour Model for classification. 
 		> We find out the optimal value of "K" by plotting an accuracy graph. We then use that value of "K" for final prediction of the data. 
 		
 		
@@ -101,7 +101,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		# The graph has been shown in Section 3 of this file.
 		
 		
-	d) Accuracy is also tested upon the Train Set and the Test Set.
+	2.4 Accuracy is also tested upon the Train Set and the Test Set.
 
 
 		print('Train set Accuracy: ', metrics.accuracy_score(Y_train, neigh.predict(X_train)))
@@ -112,7 +112,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		('Test set Accuracy: ', 0.9708029197080292)
 		
 	
-	e) We then implement K-Fold Cross-Validation to stike off any over-fitting or under-fitting of data in our model and make it a suitable and generalized one. 
+	2.5 We then implement K-Fold Cross-Validation to stike off any over-fitting or under-fitting of data in our model and make it a suitable and generalized one. 
 		> We also display the Mean Cross-Validation score at the end.
 
 		# K-Fold Implementation
@@ -138,7 +138,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		('Cross Validation Mean Score: ', 0.969370905411301)
 				
 				
-	f) This marks the end of code, the code is present in the "script.py" file.
+	2.6 This marks the end of code, the code is present in the "script.py" file.
 	
 							--End of Section Two--
 							
@@ -147,7 +147,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/k9.png)
 
-	3.1 Finding out the optimal "K" of KNN Algorithm, i.e. the proper number of neighbours for the classification. 
+	3.1 Finding out the optimal "K" of KNN Algorithm, i.e. the proper number of neighbours for the classification. Explained in Section 2.3
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/Clump.png)
 	
