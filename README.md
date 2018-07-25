@@ -146,6 +146,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 3. Graphs Plotted (Images in 'dependency_png' folder and 'k9.png')
 
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/k9.png)
+
 	3.1 Finding out the optimal "K" of KNN Algorithm, i.e. the proper number of neighbours for the classification. Explained in Section 2.3
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/Clump.png)
@@ -189,4 +190,4 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 	3.11 Class Histogram (0: Benign Cells 1: Malignant Cells)
 	
 
-						--End of Section Three--
+							--End of Section Three--
