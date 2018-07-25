@@ -174,3 +174,5 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 
 	3.10 Mitoses feature Vs Class feature
 	
+
+						--End of Section Three--
