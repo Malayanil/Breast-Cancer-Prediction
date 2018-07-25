@@ -81,8 +81,9 @@ plt.show()
 
 Y = X[['Class']].values
 
-plt.hist(Y)
+plt.hist(Y, label='0->Benign Cells\n1->Malignant Cells')
 plt.xticks(range(0, 2))
 plt.xlabel('Class')
 plt.ylabel('Count')
+plt.legend()
 plt.show()
