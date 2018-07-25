@@ -88,7 +88,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
     			training_accuracy.append(metrics.accuracy_score(Y_train, neigh.predict(X_train)))
      			print("Train set Accuracy: ",training_accuracy)
     			test_accuracy.append(metrics.accuracy_score(Y_test, Yhat))
-   			print("Test set Accuracy: ", test_accuracy)
+				print("Test set Accuracy: ", test_accuracy)
     
 		plt.plot(nCount,training_accuracy, label ='Training Accuracy')
 		plt.plot(nCount, test_accuracy, label ='Testing Accuracy')
@@ -99,11 +99,16 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		plt.show()	
 		
 		
+		
 	d) Accuracy is also tested upon the Train Set and the Test Set.
 
 
 		print('Train set Accuracy: ', metrics.accuracy_score(Y_train, neigh.predict(X_train)))
 		print('Test set Accuracy: ', metrics.accuracy_score(Y_test, Yhat))
+		
+		OUTPUT: 
+		('Train set Accuracy: ', 0.9706959706959707)
+		('Test set Accuracy: ', 0.9708029197080292)
 		
 	
 	e) We then implement K-Fold Cross-Validation to stike off any over-fitting or under-fitting of data in our model and make it a suitable and generalized one. 
@@ -113,7 +118,10 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		kf = KFold(3, True)
 		kf.get_n_splits(X)
 		print(kf)
-
+		
+		OUTPUT:
+		KFold(n_splits=3, random_state=None, shuffle=True)
+		
 		for train_index, test_index in kf.split(X):
     			# print('Train: ', train_index, 'Test: ', test_index)
     			X_train, X_test = X[train_index], X[test_index]
@@ -124,7 +132,9 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		score = cross_val_score(kNN, X, Y, cv=7)
 		print('\n')
 		print('Cross Validation Mean Score: ',score.mean())
-				
+		
+		OUTPUT:
+		('Cross Validation Mean Score: ', 0.969370905411301)
 				
 				
 	f) This marks the end of code, the code is present in the "script.py" file.
