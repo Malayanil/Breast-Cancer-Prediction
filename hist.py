@@ -1,102 +1,88 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn import preprocessing
 
 df = pd.read_csv('biopsy.csv')
 
 X = df[['ClumpThickness', 'UniformityOfCellSize', 'UniformityOfCellShape', 'MarginalAdhesion', 'EpithelialCellSize', 'BareNuclei', 'BlandChromatin', 'NormalNucleoli', 'Mitoses', 'Class']]
 
-
 X1 = X[['ClumpThickness']].values
-Y1 = X[['Class']].values
 
-bCount=0
-mCount=0
-total=683
-i=range(1,684,1)
-
-plt.scatter(X1,Y1, label='Dependency')
+plt.hist(X1)
 plt.xlabel('ClumpThickeness')
-plt.ylabel('Class')
-plt.legend()
+plt.ylabel('Count')
 plt.show()
 
 
 X2 = X[['UniformityOfCellSize']].values
-Y2 = X[['Class']].values
 
-plt.scatter(X2,Y2, label='Dependency')
+plt.hist(X2)
 plt.xlabel('UniformityOfCellSize')
-plt.ylabel('Class')
-plt.legend()
+plt.ylabel('Count')
 plt.show()
 
 
 X3 = X[['UniformityOfCellShape']].values
-Y3 = X[['Class']].values
 
-plt.scatter(X3,Y3, label='Dependency')
+plt.hist(X3)
 plt.xlabel('UniformityOfCellShape')
-plt.ylabel('Class')
-plt.legend()
+plt.ylabel('Count')
 plt.show()
 
 
 X4 = X[['MarginalAdhesion']].values
-Y4 = X[['Class']].values
 
-plt.scatter(X4,Y4, label='Dependency')
+plt.hist(X4)
 plt.xlabel('MarginalAdhesion')
-plt.ylabel('Class')
-plt.legend()
+plt.ylabel('Count')
 plt.show()
 
 
 X5 = X[['EpithelialCellSize']].values
-Y5 = X[['Class']].values
 
-plt.scatter(X5,Y5, label='Dependency')
+plt.hist(X5)
 plt.xlabel('EpithelialCellSize')
-plt.ylabel('Class')
-plt.legend()
+plt.ylabel('Count')
 plt.show()
 
 
 X6 = X[['BareNuclei']].values
-Y6 = X[['Class']].values
 
-plt.scatter(X6,Y6, label='Dependency')
+plt.hist(X6)
 plt.xlabel('BareNuclei')
-plt.ylabel('Class')
-plt.legend()
+plt.ylabel('Count')
 plt.show()
 
 
 X7 = X[['BlandChromatin']].values
-Y7 = X[['Class']].values
 
-plt.scatter(X7,Y7, label='Dependency')
+plt.hist(X7)
 plt.xlabel('BlandChromatin')
-plt.ylabel('Class')
-plt.legend()
+plt.ylabel('Count')
 plt.show()
 
 
 X8 = X[['NormalNucleoli']].values
-Y8 = X[['Class']].values
 
-plt.scatter(X8,Y8, label='Dependency')
+plt.hist(X8)
 plt.xlabel('NormalNucleoli')
-plt.ylabel('Class')
-plt.legend()
+plt.ylabel('Count')
 plt.show()
 
 
 X9 = X[['Mitoses']].values
-Y9 = X[['Class']].values
 
-plt.scatter(X9,Y9, label='Dependency')
+plt.hist(X9)
 plt.xlabel('Mitoses')
-plt.ylabel('Class')
-plt.legend()
+plt.ylabel('Count')
+plt.show()
+
+
+Y = X[['Class']].values
+
+plt.hist(Y)
+plt.xticks(range(0, 2))
+plt.xlabel('Class')
+plt.ylabel('Count')
 plt.show()
