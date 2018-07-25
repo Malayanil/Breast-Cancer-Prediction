@@ -146,44 +146,47 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 3. Graphs Plotted (Images in 'dependency_png' folder and 'k9.png')
 
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/k9.png)
-
 	3.1 Finding out the optimal "K" of KNN Algorithm, i.e. the proper number of neighbours for the classification. Explained in Section 2.3
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/Clump.png)
 	
-	3.2 ClumpSize feature Vs Class feature
+	3.2 ClumpThickness Histogram
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/CellSize.png)
 	
-	3.3 UniformityOfCellSize feature Vs Class feature
+	3.3 UniformityOfCellSize Histogram
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/CellShape.png)
 
-	3.4 UniformityOfCellShape feature Vs Class feature
+	3.4 UniformityOfCellShape Histogram
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/Adhesion.png)
 
-	3.5 MarginalAdhesion feature Vs Class feature
+	3.5 MarginalAdhesion Histogram
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/EpiCellSize.png)
 
-	3.6 EpithelialCellSize feature Vs Class feature
+	3.6 EpithelialCellSize Histogram
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/BareN.png)
 
-	3.7 BareNuclei feature Vs Class feature
+	3.7 BareNuclei Histogram
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/BlandC.png)
 
-	3.8 BlandChromatin feature Vs Class feature
+	3.8 BlandChromatin Histogram
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/NormalNN.png)
 
-	3.9 NormalNucleoli feature Vs Class feature
+	3.9 NormalNucleoli Histogram
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/Mitoses.png)
 
-	3.10 Mitoses feature Vs Class feature
+	3.10 Mitoses Histogram
+	
+![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/Class.png)
+
+	3.11 Class Histogram (0: Benign Cells 1: Malignant Cells)
 	
 
 						--End of Section Three--
