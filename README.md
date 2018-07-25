@@ -199,5 +199,8 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 
 	3.11 Class Histogram (0: Benign Cells 1: Malignant Cells)
 	
+	Class 0 (Benign Cell Count) -> 444
+	Class 1 (Malignant Cell Count) -> 239
+	
 
 							--End of Section Three--
