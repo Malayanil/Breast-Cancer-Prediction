@@ -1,6 +1,16 @@
 # Breast Cancer Prediction
 
-1. General Details and FAQs: (Details.txt)
+Welcome ! This is a generalised Read Me File for the Breas Cancer Prediction project achived by implementation of Machine Learning in Python. 
+
+
+Index :
+
+	1. General Details and FAQs
+	2. Explanation of the Code
+	3. Graphs plotted in the Program (Images in 'dependency_png' folder and 'k9.png')
+
+
+1. General Details and FAQs: 
 
 	1.1 What is a Biopsy ?
 	
@@ -39,8 +49,8 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
   	Normal Nucleoli: Nucleoli are small structures seen in the nucleus. In normal cells the nucleolus is usually very small if visible at all. In cancer cells the nucleoli become more prominent, and sometimes there are more of them.
 
 							--End of Section One--
-
-2. Code Explained: (code_explained.txt)
+							
+2. Explanation of the Code
 
 	2.1 At first, we import the libraries needed for our Script.
 		> NumPy is needed for Array usage in the program and also conversion of DataFrames.
@@ -143,7 +153,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 							--End of Section Two--
 							
 
-3. Graphs Plotted (Images in 'dependency_png' folder and 'k9.png')
+3. Graphs plotted in the Program (Images in 'dependency_png' folder and 'k9.png')
 
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/k9.png)
 
