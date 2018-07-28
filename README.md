@@ -48,7 +48,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
   	Bland Chromatin: Describes a uniform "texture" of the nucleus seen in benign cells. In cancer cells the chromatin tend to be more coarse.\
   	Normal Nucleoli: Nucleoli are small structures seen in the nucleus. In normal cells the nucleolus is usually very small if visible at all. In cancer cells the nucleoli become more prominent, and sometimes there are more of them.
 
-							--End of Section One--
+								--End of Section One--
 							
 2. Explanation of the Code
 
@@ -167,7 +167,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 				
 	2.7 This marks the end of code, the code is present in the "script.py" file.
 	
-							--End of Section Two--
+								--End of Section Two--
 							
 
 3. Graphs plotted in the Program (Images in 'dependency_png' folder and 'k9.png')
@@ -199,4 +199,4 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 	 
 	
 
-						--End of Section Three--
+							--End of Section Three--
