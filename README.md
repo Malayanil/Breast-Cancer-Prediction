@@ -86,7 +86,8 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		fig.tight_layout()
 		plt.colorbar(im)
 		plt.show()
-
+		
+		# 'n' is the random number generated to gather the data points from the dataset.
 		
 	2.3 Now, we load the dataset into our DataFrame and then split and convert them into two different Arrays required for Training and Testing the dataset.
 	
