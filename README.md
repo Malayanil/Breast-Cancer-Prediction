@@ -71,8 +71,24 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		from sklearn.model_selection import KFold
 		from sklearn.cross_validation import cross_val_score, cross_val_predict
 
+	2.2 Heatmaps show the Co-Relation between the features themselves and the colorbar beside each of the heatmaps show the numerical scale of the Heatmap. The dataset has been divided into 5 random non-repetitive portions and the Heatmap is plotted with 10 random non-repetitive data points; since all of the data from the dataset cannot be fit into a Heatmap as it will get cluttered. Then finally, combining all of the 5 Heatmaps, one final Heatmap is plotted for representing the full dataset.
+	
+		im =ax.imshow(X[n:(n+10)])
+		
+		ax.set_xticks(np.arange(len(features)))
+		ax.set_yticks(np.arange(len(features)))
+		ax.set_xticklabels(features)
+		ax.set_yticklabels(features)
+		plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
+		
+		ax.set_title('Heatmap of Feature\'s CoRelations')
+		plt.gca().invert_xaxis()
+		fig.tight_layout()
+		plt.colorbar(im)
+		plt.show()
 
-	2.2 Now, we load the dataset into our DataFrame and then split and convert them into two different Arrays required for Training and Testing the dataset.
+		
+	2.3 Now, we load the dataset into our DataFrame and then split and convert them into two different Arrays required for Training and Testing the dataset.
 	
 		
 		df = pd.read_csv('biopsy.csv')
@@ -84,7 +100,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		# We have chosen the features as concluded from the individual dependencies of features compared to the 'Class' feature.
 		# The graphs have been shown in Section 3 of this file.
 		
-	2.3 Since this is a Machine Learning problem to classify and predict data into two categories, we use the K-Nearest Neighbour Model for classification.\
+	2.4 Since this is a Machine Learning problem to classify and predict data into two categories, we use the K-Nearest Neighbour Model for classification.\
 		> We find out the optimal value of "K" by plotting an accuracy graph. We then use that value of "K" for final prediction of the data. 
 		
 		
@@ -111,7 +127,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		# The graph has been shown in Section 3 of this file.
 		
 		
-	2.4 Accuracy is also tested upon the Train Set and the Test Set.
+	2.5 Accuracy is also tested upon the Train Set and the Test Set.
 
 
 		print('Train set Accuracy: ', metrics.accuracy_score(Y_train, neigh.predict(X_train)))
@@ -122,7 +138,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		('Test set Accuracy: ', 0.9708029197080292)
 		
 	
-	2.5 We then implement K-Fold Cross-Validation to stike off any over-fitting or under-fitting of data in our model and make it a suitable and generalized one.\
+	2.6 We then implement K-Fold Cross-Validation to stike off any over-fitting or under-fitting of data in our model and make it a suitable and generalized one.\
 		> We also display the Mean Cross-Validation score at the end.
 
 		# K-Fold Implementation
@@ -148,7 +164,7 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		('Cross Validation Mean Score: ', 0.969370905411301)
 				
 				
-	2.6 This marks the end of code, the code is present in the "script.py" file.
+	2.7 This marks the end of code, the code is present in the "script.py" file.
 	
 							--End of Section Two--
 							
@@ -201,6 +217,10 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 	
 	Class 0 (Benign Cell Count) -> 444
 	Class 1 (Malignant Cell Count) -> 239
+	
+![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/heatmaps/combined.png)
+
+	3.12 Heatmaps 
 	
 
 							--End of Section Three--
