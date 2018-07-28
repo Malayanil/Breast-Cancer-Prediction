@@ -172,12 +172,10 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 
 3. Graphs plotted in the Program (Images in 'dependency_png' folder and 'k9.png')
 
+		3.1 Finding out the optimal "K" of KNN Algorithm, i.e. the proper number of neighbours for the classification. Explained in Section 2.3
+
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/k9.png)
 
-	3.1 Finding out the optimal "K" of KNN Algorithm, i.e. the proper number of neighbours for the classification. Explained in Section 2.3
-	
-![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/combined.png)
-	
 	3.2 Graphs 
 		3.2.1 ClumpThickness Histogram
 		3.2.2 UniformityOfCellSize Histogram
@@ -188,11 +186,17 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 		3.2.7 BlandChromatin Histogram
 		3.2.8 NormalNucleoli Histogram
 		3.2.9 Mitoses Histogram
-		3.2.10 Class [0: Benign Cell Count\ 1: Malignant Cell Count] 
+		3.2.10 Class [0: Benign Cell Count 1: Malignant Cell Count]
+		
+![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/combined.png)
+		
+
+	
+	3.3 Heatmaps
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/heatmaps/combined.png)
 	
-	3.3 Heatmaps 
+	 
 	
 
 							--End of Section Three--
