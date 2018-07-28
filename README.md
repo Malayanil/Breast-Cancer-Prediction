@@ -176,52 +176,23 @@ P. M. Murphy and D. W. Aha (1992). *biopsy.csv* , UCI Repository of machine lear
 
 	3.1 Finding out the optimal "K" of KNN Algorithm, i.e. the proper number of neighbours for the classification. Explained in Section 2.3
 	
-![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/Clump.png)
+![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/combined.png)
 	
-	3.2 ClumpThickness Histogram
-	
-![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/CellSize.png)
-	
-	3.3 UniformityOfCellSize Histogram
-	
-![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/CellShape.png)
-
-	3.4 UniformityOfCellShape Histogram
-	
-![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/Adhesion.png)
-
-	3.5 MarginalAdhesion Histogram
-	
-![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/EpiCellSize.png)
-
-	3.6 EpithelialCellSize Histogram
-	
-![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/BareN.png)
-
-	3.7 BareNuclei Histogram
-	
-![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/BlandC.png)
-
-	3.8 BlandChromatin Histogram
-	
-![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/NormalNN.png)
-
-	3.9 NormalNucleoli Histogram
-	
-![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/Mitoses.png)
-
-	3.10 Mitoses Histogram
-	
-![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/dependency_pngs/Class.png)
-
-	3.11 Class Histogram (0: Benign Cells 1: Malignant Cells)
-	
-	Class 0 (Benign Cell Count) -> 444
-	Class 1 (Malignant Cell Count) -> 239
+	3.2 Graphs 
+		3.2.1 ClumpThickness Histogram
+		3.2.2 UniformityOfCellSize Histogram
+		3.2.3 UniformityOfCellShape Histogram
+		3.2.4 MarginalAdhesion Histogram
+		3.2.5 EpithelialCellSize Histogram
+		3.2.6 BareNuclei Histogram
+		3.2.7 BlandChromatin Histogram
+		3.2.8 NormalNucleoli Histogram
+		3.2.9 Mitoses Histogram
+		3.2.10 Class [0: Benign Cell Count\ 1: Malignant Cell Count] 
 	
 ![alt text](https://github.com/Malayanil/Breast-Cancer-Prediction/blob/master/heatmaps/combined.png)
-
-	3.12 Heatmaps 
+	
+	3.3 Heatmaps 
 	
 
 							--End of Section Three--
